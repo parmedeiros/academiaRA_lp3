@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Formulario</title>
+</head>
+<body>
+    
+    <form action="../controle/cadastrarAtividade.php" method="post">
+    
+    <div>
+        <h1> Formulario HTML</h1>
+        <p> Cadastro de atividades</p>
+
+        <form>
+
+        <label for="disc"> Disciplina: </label>
+        <select name="disc" id="disc">
+
+            <option value="lp3"> Lab de Prog. III</option>
+            <option value="bd"> Banco de Dados</option>
+            <option value="mat"> Matemática</option>
+            <option value="pt">Português</option>
+        </select>
+
+        
+        <label for="tema"> Tema: </label>
+        <input type="text" name="tema" id="tema" required><br>
+
+        <label for="desc"> Descrição: </label>
+        <textarea name="desc" cols="30" rows="3" id="desc"></textarea><br>
+
+        <label for="nota"> Nota:  </label>
+        <input type="text" name="nota" id="nota" required><br>
+
+        <label for="data"> Data: </label><br>
+        <input type="text" name="data" id="data" required><br>
+
+        <br><br>
+        
+        <div class="button">
+        <input type="submit" id="enviar" name="enviar" value="enviar">
+        </div>
+        
+     
+
+
+        </form>
+    </div>
+</body>
+</html>
